@@ -23,12 +23,15 @@
  */
 class AutonomousCommand: public Command {
 public:
-	AutonomousCommand();
+	AutonomousCommand(float, float, float);
 	virtual void Initialize();
 	virtual void Execute();
 	virtual bool IsFinished();
 	virtual void End();
 	virtual void Interrupted();
+	float leftSpeed;
+	float rightSpeed;
+	float time;
 };
 
 #endif

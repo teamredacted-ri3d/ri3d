@@ -37,7 +37,7 @@ OI::OI() {
         // SmartDashboard Buttons
 	SmartDashboard::PutData("GripperOpen", new GripperOpen());
 
-	SmartDashboard::PutData("Autonomous Command", new AutonomousCommand());
+	SmartDashboard::PutData("Autonomous Command", new AutonomousCommand(0, 0, 0));
 
 	SmartDashboard::PutData("GripperClose", new GripperClose());
 
